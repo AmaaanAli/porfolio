@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+
+}
+
+
+nav {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid black;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav label {
+    font-size: 1.5rem;
+    color: rgb(255, 106, 0);
+    padding: 2rem;
+    font-weight: bolder;
+}
+
+.toggle-btn {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000; 
+}
+
+/* Menu styles */
+nav .nav-menu {
+    display: flex; 
+    gap: 1rem;
+}
+
+nav .nav-menu li {
+    margin: 0; 
+}
+
+nav .nav-menu li a {
+    font-size: 1.3rem;
+    color: white;
+    padding: 0 1rem;
+}
+
+nav .nav-menu a:hover {
+    color: red;
+    font-size: 1.2rem;
+}
+
+/* Contents */
+
+.content {
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    height: 60vh;
+    padding: 0rem 0 0 8rem; /* Add some padding for content alignment */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.content h1 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgb(255, 106, 0);
+}
+
+.content h3 {
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.6rem;
+    color: white;
+}
+
+.content p {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+}
+
+
+.About{
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid black;
+}
+
+.About p{
+    padding-left: 14rem;
+    padding-top: 2rem;
+    position: inline;
+    transform: translateY(-10rem);
+    font-size: 1.6rem;
+    color: white;
+
+}
+
+.fa-solid{
+    font-size: 4rem;
+    padding: 4rem 3rem 3rem 7rem;
+    color: rgb(255, 106, 0);
+}
+
+#Skills{
+    display: flex;
+    background: rgba(0, 0, 0, 0.9);
+    height: 81vh;
+    width: 100vw;
+    justify-content: center;
+
+}
+#skill{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding-top: 4rem;
+    font-size: 1.8rem;
+    color: rgb(255, 106, 0);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-item{
+    width: 20vw;
+}
+
+#icon1, #icon2, #icon3, #icon4{
+    font-size: 7rem;
+    display: grid;
+    padding: 4rem 2.3rem;
+    border: 2px solid black;
+    margin: 0 3rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 0.5rem;
+    
+}
+#java{
+    padding-left: 3.5rem;
+    position: relative;
+}
+
+
+.icon-item h3{
+    padding: 1rem 7rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+#icon1:hover{
+    color: red;
+    font-size: 7.5rem;
+}
+
+#icon2:hover{
+    color: rgb(47, 0, 255);
+    font-size: 7.5rem;
+}
+
+#icon3:hover{
+    color: rgb(255, 255, 0);
+    font-size: 7.5rem;
+}
+
+#icon4:hover{
+    color: rgb(51, 255, 0);
+    font-size: 7.5rem;
+}
+
+.projects{
+    border: 2px solid black;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.projects h2{
+    text-align: center;
+    color: rgb(255, 106, 0);
+    padding-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.pro{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+#details{
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+}
+.det{
+    padding: 4rem;
+
+}
+
+.det h2{
+    font-size: 2rem;
+    padding: 4rem 0 0 4rem;
+    color: rgb(255, 106, 0);
+}
+
+.det h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 4rem;
+    color: white;
+}
+
+.sco-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+#mail, #git, #link, #insta{
+    font-size:1.8rem;
+    transform: translateX(3rem);
+    color: white;
+    padding: 0 0 1.8rem 0;
+}
+
+.sco-icons a{
+    padding-left: 16rem;
+    color: white;
+    transform: translateY(-3.5rem);
+    font-size: 1.1rem;
+    
+}
+
+#Mail{
+    padding-left: 23.5rem;
+}
+
+#con{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(255, 106, 0);
+}
+
+
+
+/* Media query for screens 480px and below */
+@media (max-width: 480px) {
+
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: none; 
+        flex-direction: column; 
+        text-align: center;
+        width: 100%; 
+        gap: 1rem;
+        padding-top: 3rem; 
+    }
+
+    .nav-menu.show {
+        display: flex; 
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center; 
+        padding: 0rem;
+        align-items: flex-start;
+        height: 60vh;
+    }
+
+    .content h1 {
+        font-size: 2.5rem; 
+    }
+
+    .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        line-height: 1.5rem; 
+    }
+
+    .content img {
+        width: auto;
+        height: auto;
+    }
+
+    .About {
+        flex-direction: column; 
+        align-items: flex-start; 
+        text-align: center; 
+        height: 60vh;
+    }
+
+    .About p {
+        padding-left: 0; 
+        font-size: 1.2rem; 
+        margin-top: 3rem; 
+    }
+
+    .fa-solid {
+        font-size: 3rem; 
+        margin-bottom: 3rem; 
+        padding-right: 7rem;
+    }
+
+    
+    #Skills {
+        flex-direction: column; 
+        height: auto; 
+        padding: 1rem; 
+        justify-content: center; 
+    }
+
+    .icons {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .icon-item {
+        width: 80vw; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        margin: 1rem 0; 
+    }
+
+    #icon1, #icon2, #icon3, #icon4 {
+        font-size: 5rem; 
+        padding: 2rem 1rem; 
+        margin-bottom: 1rem; 
+    }
+
+    .icon-item h3 {
+        padding: 0.5rem 1rem; 
+        font-size: 1.2rem; 
+        margin: 0; 
+    }
+
+    #java {
+        padding-left: 0; 
+    }
+
+    .projects {
+        padding: 1rem; 
+        height: 90vh;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem; 
+        padding-top: 0rem; 
+    }
+
+    .pro {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .pr {
+        width: 100%; 
+        max-width: 90vw; 
+        padding-bottom: 4rem;
+    }
+
+    iframe {
+        height: 300px; 
+        width: 100%; 
+    }
+
+    #details {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 1rem; 
+        text-align: center; 
+    }
+
+    .det {
+        padding: 2rem; 
+    }
+
+    .det h2 {
+        font-size: 1.5rem; 
+        padding: 2rem 0 0 0; 
+    }
+
+    .det h3 {
+        font-size: 1.2rem; 
+        padding: 1rem 0 0 0; 
+    }
+
+    .sco-icons {
+        padding-top: 2rem; 
+    }
+
+    #mail, #git, #link, #insta {
+        font-size: 1.5rem; 
+        margin: 0.5rem 0; 
+        transform: none;
+        position: relative;
+        top: -2rem;
+    }
+
+    .sco-icons a {
+        padding-left: 0; 
+        margin: 0.5rem 0;
+        font-size: 1rem; 
+    }
+
+    #Mail{
+        padding-right: 23rem;
+    }
+
+    #con {
+        font-size: 1.5rem; 
+        padding-left: 0; 
+    }
+}
+
+
+
+
