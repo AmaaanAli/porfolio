@@ -298,41 +298,41 @@ nav .nav-menu a:hover {
 
     .content {
         flex-direction: column;
-        text-align: center; 
-        padding: 0rem;
-        align-items: flex-start;
-        height: 50vh;
+        
+        align-items: center;
+        height: 40vh;
     }
 
     .content h1 {
         font-size: 2.5rem; 
+        margin-right: 5rem;
     }
 
     .content h3 {
         font-size: 1.8rem;
+        margin-right: 5rem;
     }
 
     .content p {
         font-size: 1rem;
         line-height: 1.5rem; 
+        margin-right: 5rem;
     }
 
-    .content img {
-        width: auto;
-        height: auto;
-    }
 
     .About {
         flex-direction: column; 
         align-items: flex-start; 
         text-align: center; 
-        height: 60vh;
+        height: 40vh;
     }
 
     .About p {
-        padding-left: 0; 
+        padding-left: 2rem; 
+        padding-right: 2rem;
         font-size: 1.2rem; 
         margin-top: 3rem; 
+        text-align: center;
     }
 
     .fa-solid {
@@ -382,7 +382,7 @@ nav .nav-menu a:hover {
 
     .projects {
         padding: 1rem; 
-        height: 90vh;
+        height: 50vh;
     }
 
     .projects h2 {
@@ -454,7 +454,3 @@ nav .nav-menu a:hover {
         padding-left: 0; 
     }
 }
-
-
-
-
