@@ -273,6 +273,7 @@ nav .nav-menu a:hover {
     html, body{
         width: 100%;
         overflow-x: hidden;
+        background: rgba(0, 0, 0, 0.9);
     }
     nav {
         flex-direction: column; 
@@ -321,6 +322,7 @@ nav .nav-menu a:hover {
 
 
     .About {
+        margin-top: 3rem;
         flex-direction: column; 
         align-items: flex-start; 
         text-align: center; 
