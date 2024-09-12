@@ -77,7 +77,14 @@
                 <a href="#">Amaan.Aly</a>
             </div>
     </section>
-    
+    <script>
+        TglBtn = document.querySelector('.toggle-btn')
+        nav = document.querySelector('.nav-menu')
+
+        TglBtn.addEventListener('click', function(){
+            nav.classList.toggle("show-nav");
+        })
+    </script>
 </body>
 
 </html>
