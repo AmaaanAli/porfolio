@@ -266,7 +266,7 @@ nav .nav-menu a:hover {
 }
 
 
-
+ 
 /* Media query for screens 480px and below */
 @media (max-width: 480px) {
 
@@ -281,12 +281,18 @@ nav .nav-menu a:hover {
     }
 
     .nav-menu {
+        height: 0;
+        overflow-y: hidden;
         display: none; 
         flex-direction: column; 
         text-align: center;
         width: 100%; 
         gap: 1rem;
         padding-top: 3rem; 
+    }
+
+    .show-nav{
+        height: 12rem;
     }
 
     .nav-menu.show {
