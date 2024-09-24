@@ -9,8 +9,8 @@
 </head>
 <body>
     <nav>
-        <label>&nlt; Amaan Ali</label>
-        <button class="toggle-btn" aria-label="Toggle navigation">&#9776;</button>
+        <label>&nlt; Amaan Ali></label>
+        <button class="toggle-btn hidden" aria-label="Toggle navigation">&#9776;</button>
         <ul class="nav-menu">
             <li><a href="#content">About Me</a></li>
             <li><a href="#Skills">Skills</a></li>
@@ -18,40 +18,40 @@
             <li><a href="#details">Contacts</a></li>
         </ul>
     </nav>
-    <div class="content" id="content">
-        <h1>Amaan ALi</h1>
-        <h3>Front-End Developer</h3>
+    <div class="content hidden" id="content">
+        <h1 class="hidden">Amaan Ali</h1>
+        <h3 class="hidden">Front-End Developer</h3>
         <p>Front-end developer looking for projects, freelancer and<br> job vacancy, constantly learning and always seeking to improve.</p>
     </div>
 
-    <section class="About">
-        <i class="fa-solid fa-code" id="code"></i>
-        <p>A few years ago, I became interested in developing websites and interfaces. Since then, I have been constantly improving my skills. Now I develop websites <br>and web applications on request or for myself.</p>
+    <section class="About hidden">
+        <i class="fa-solid fa-code hidden" id="code"></i>
+        <p class="hidden">A few years ago, I became interested in developing websites and interfaces. Since then, I have been constantly improving my skills. Now I develop websites <br>and web applications on request or for myself.</p>
     </section>
 
     <h2 id="skill">My Skills</h2>
     <section id="Skills">
         <div class="icons">
-            <div class="icon-item">
+            <div class="icon-item hidden">
                 <i class="fa-brands fa-html5" id="icon1"></i>
                 <h3>HTML</h3>
             </div>
-            <div class="icon-item">
+            <div class="icon-item hidden">
                 <i class="fa-brands fa-css3-alt" id="icon2"></i>
                 <h3>CSS</h3>
             </div>
-            <div class="icon-item">
+            <div class="icon-item hidden">
                 <i class="fa-brands fa-js" id="icon3"></i>
                 <h3 id="java">JavaScript</h3>
             </div>
-            <div class="icon-item">
+            <div class="icon-item hidden">
                 <i class="fa-brands fa-git-alt" id="icon4"></i>
                 <h3>Git</h3>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects hidden" id="projects">
         <h2>My Project</h2>
         <div class="pro">
             <div class="pr">
@@ -61,20 +61,20 @@
     </section>
 
     <section id="details">
-        <div class="det">
-            <h2>&nlt; Amaan Ali></h2>
+        <div class="det hidden">
+            <h2 class="hidden">&nlt; Amaan Ali></h2>
             <h3>If you liked my work and<br> need me, I'm ready to <br>talk to you.</h3>
         </div>
-            <div class="sco-icons">
+            <div class="sco-icons hidden">
                 <a href="#" id="con">Contacts</a>
-                <i class="fa-regular fa-envelope" id="mail"></i>
+                <i class="fa-regular fa-envelope hidden" id="mail"></i>
                 <a href="#" id="Mail">amaanali3521@gmail.com</a>
-                <i class="fa-brands fa-github" id="git"></i>
-                <a href="https://github.com/AmaaanAli">AmaaanAli</a>
-                <i class="fa-brands fa-linkedin" id="link"></i>
+                <i class="fa-brands fa-github hidden" id="git"></i>
+                <a href="https://github.com/AmaaanAli">Amaan Ali</a>
+                <i class="fa-brands fa-linkedin hidden" id="link"></i>
                 <a href="www.linkedin.com/in/amaan-ali-4b8b05241">Amaan Ali</a>
-                <i class="fa-brands fa-square-instagram" id="insta"></i>
-                <a href="#">Amaan.Aly</a>
+                <i class="fa-brands fa-square-instagram hidden" id="insta"></i>
+                <a href="#">Amaan Ali</a>
             </div>
     </section>
     <script>
@@ -83,7 +83,24 @@
 
         TglBtn.addEventListener('click', function(){
             nav.classList.toggle("show-nav");
-        })
+        });
+
+        // Adding animatons
+        const hidden = document.querySelectorAll(".hidden");
+        // Api for lazy loading
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting){
+                    entry.target.classList.add('shown');
+                }else {
+                    entry.target.classList.remove('shown');
+                }
+            });
+        });
+
+        
+        hidden.forEach((el) => observer.observe(el));
+        
     </script>
 </body>
 
