@@ -63,6 +63,7 @@ nav .nav-menu li a {
     font-size: 1.3rem;
     color: white;
     padding: 0 1rem;
+    scroll-behavior: smooth;
 }
 
 nav .nav-menu a:hover {
@@ -269,7 +270,40 @@ nav .nav-menu a:hover {
     color: rgb(255, 106, 0);
 }
 
+/* Adding animation */
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.shown{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.icon-item:nth-child(2){
+    transition-delay: 100ms;
+}
+
+.icon-item:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.icon-item:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+/* Animation end */
  
 /* Media query for screens 480px and below */
 @media (max-width: 480px) {
@@ -466,3 +500,7 @@ nav .nav-menu a:hover {
         padding-left: 0; 
     }
 }
+
+
+
+
